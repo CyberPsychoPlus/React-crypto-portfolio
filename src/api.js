@@ -6,7 +6,7 @@ export function fakeFetchCrypto() {
 		if (connection) {
 			setTimeout(() => {
 				resolve(cryptoData)
-			}, 1)
+			}, 1000)
 		} else {
 			reject('Something went wrong(')
 		}
@@ -19,7 +19,7 @@ export function fetchAssets() {
 		if (connection) {
 			setTimeout(() => {
 				resolve(cryptoAssets)
-			}, 1)
+			}, 1000)
 		} else {
 			reject('Something went wrong(')
 		}
